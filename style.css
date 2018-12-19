@@ -141,7 +141,32 @@ h1 span{
 main{
   position: relative;
   height: 102.96vw;
-  background-image: url('img/mainCover.jpg');
+  background-color: rgb(205,205,205);
+  /* background-image: url('img/mainCover.jpg'); */
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+.mainBottomBg{
+  position: absolute;
+
+  height: 82.8vw;
+  width: 100%;
+  bottom: -12vw;
+  transform:skewY(-13deg);
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+.insideBottomBg{
+  position: relative;
+  background-image: url('img/test.jpg');
+  height: 500px;
+  height: 82.8vw;
+  bottom: 12vw;
+  width: 100%;
+  background-color: red;
+  transform: skewY(13deg);
   background-size: 100% 100%;
 }
 
@@ -250,7 +275,7 @@ main{
   display: flex;
   text-align: justify;
   height: 22.8vw;
-  font-size: 1.03vw;
+  font-size:  calc(10px + 0.5vw);
   color:rgb(143,143,141);
 }
 
