@@ -245,6 +245,69 @@ main{
   left:-6.07vw;
   background-image: url('img/aboutMe.jpg');
   background-size: 100% 100%;
+  visibility:hidden;
+}
+
+.AboutMeWhiteAnimDiv{
+  margin-top: 7.41vw;
+  margin-left:-6.07vw;
+  top: 0;
+  position: absolute;
+  background-color: white;
+  width: 0;
+  height: 5.93vw;
+  animation-timing-function: linear;
+  animation-fill-mode:forwards;
+}
+.animateWhiteClass{
+  animation: 1s AboutMeWhiteAnimDiv;
+}
+
+@keyframes AboutMeWhiteAnimDiv {
+  0%{
+    left: 0;
+  }
+  48%{
+    left: 0;
+    width: 30.61vw;
+  }
+  50%{
+    left: 0;
+    width: 30.61vw;
+  }
+  100%{
+    left: 30.61vw;
+    width: 0;
+  }
+}
+
+.AboutMeBlackAnimDiv{
+  margin-top: 7.41vw;
+  margin-left:-6.07vw;
+  top: 0;
+  position: absolute;
+  background-color: black;
+  width: 0;
+  height: 5.93vw;
+  animation-timing-function: linear;
+  animation-fill-mode:forwards;
+}
+.animateBlackClass{
+  animation: 1s AboutMeBlackAnimDiv;
+}
+
+@keyframes AboutMeBlackAnimDiv {
+  0%{
+    left: 0;
+  }
+  50%{
+    left: 0;
+    width: 30.61vw;
+  }
+  100%{
+    left: 30.61vw;
+    width: 0;
+  }
 }
 
 .aboutMe p{
