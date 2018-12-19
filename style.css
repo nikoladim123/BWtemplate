@@ -141,15 +141,13 @@ h1 span{
 main{
   position: relative;
   height: 102.96vw;
-  background-color: rgb(205,205,205);
-  /* background-image: url('img/mainCover.jpg'); */
+  background-image: radial-gradient(circle, #f2f2f2, #e9e9e9, #dfdfdf, #d6d6d6, #cdcdcd);
   background-size: 100% 100%;
   overflow: hidden;
 }
 
 .mainBottomBg{
   position: absolute;
-
   height: 82.8vw;
   width: 100%;
   bottom: -12vw;
@@ -165,7 +163,6 @@ main{
   height: 82.8vw;
   bottom: 12vw;
   width: 100%;
-  background-color: red;
   transform: skewY(13deg);
   background-size: 100% 100%;
 }
