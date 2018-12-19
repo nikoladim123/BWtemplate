@@ -11,15 +11,16 @@ body{
   margin: 0;
 }
 header{
-  position: fixed;
+  position: relative;
 }
 
 header{
   overflow: hidden;
-  height: 56.18vw;/*56.18vw;*/
+  height: 56.18vw;
   background: url('img/cover.jpg');
   background-size: 100% 100.1%;
   background-repeat: no-repeat;
+  border-bottom: 0.80vw solid rgb(143,143,142);
 }
 
 header h1{
@@ -102,11 +103,26 @@ h1 span{
   overflow: hidden;
 }
 
+@keyframes animTextBox {
+  0%{
+    width: 0;
+    left: 14vw;
+    filter:blur(10px);
+  }
+  100%{
+    filter:blur(0px);
+    width: 34.09vw;
+    left: 3.85vw;
+  }
+}
+
 .animTextBox{
+  overflow: hidden;
   width: 34.09vw;
   position: absolute;
   top:25.2vw;
   left: 3.85vw;
+  animation: 5s animTextBox;
 }
 
 .animTextBox h2{
@@ -138,8 +154,6 @@ h1 span{
 
 /*MAIN START*/
 main{
-border-top: 0.80vw solid rgb(143,143,142);
-  top: 56.18vw;
   position: relative;
   height: 102.96vw;
   background-image: radial-gradient(circle,#ffffff , #f0f0f0);
